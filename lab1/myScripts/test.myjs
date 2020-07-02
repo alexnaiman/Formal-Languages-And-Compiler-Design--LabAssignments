@@ -1,0 +1,11 @@
+( begin 
+  int a;
+  int b;
+  a = "";
+  read(c);
+  b = 3;
+  a === b;
+  a <= b;
+  a >= _2basd;
+  write(a +b);
+end

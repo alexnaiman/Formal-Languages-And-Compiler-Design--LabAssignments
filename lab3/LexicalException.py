@@ -1,0 +1,2 @@
+class LexicalException(Exception):
+    pass

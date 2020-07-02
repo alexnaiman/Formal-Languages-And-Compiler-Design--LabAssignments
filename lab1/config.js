@@ -1,0 +1,82 @@
+const codification = {
+  identifier: 0,
+  constant: 1,
+  read: 2,
+  write: 3,
+  if: 4,
+  else: 5,
+  while: 6,
+  begin: 7,
+  end: 8,
+  int: 9,
+  array: 10,
+  bool: 11,
+  "{": 12,
+  "}": 13,
+  "(": 14,
+  ")": 15,
+  ";": 16,
+  "[": 17,
+  "]": 18,
+  ",": 19,
+  "+": 20,
+  "-": 21,
+  "*": 22,
+  "/": 23,
+  "%": 24,
+  "===": 25,
+  "!==": 26,
+  "=": 27,
+  ">": 28,
+  "<": 29,
+  "<=": 30,
+  ">=": 31,
+  true: 32,
+  false: 33,
+  '"': 34
+};
+
+const reservedWords = {
+  read: 2,
+  write: 3,
+  if: 4,
+  else: 5,
+  while: 6,
+  begin: 7,
+  end: 8,
+  int: 9,
+  array: 10,
+  bool: 11,
+  true: 32,
+  false: 33
+};
+
+const operatorsOrSeparators = {
+  "{": 12,
+  "}": 13,
+  "(": 14,
+  ")": 15,
+  ";": 16,
+  "[": 17,
+  "]": 18,
+  ",": 19,
+  "+": 20,
+  "-": 21,
+  "*": 22,
+  "/": 23,
+  "%": 24,
+  "===": 25,
+  "!==": 26,
+  "=": 27,
+  ">": 28,
+  "<": 29,
+  "<=": 30,
+  ">=": 31,
+  '"': 34
+};
+
+module.exports = {
+  reservedWords,
+  codification,
+  operatorsOrSeparators
+};

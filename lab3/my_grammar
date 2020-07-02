@@ -1,0 +1,26 @@
+Program StatementList Statement StatementVar SimpleStatement OutputStatement CompoundStatement DAStatement InputStatement OutputStatement OutputVarStatement Expression ExpressionVar Term TermVar Factor ConditionalStatement Condition ElseStatement WhileStatement Type Type_list Array Relation
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+Program
+Program-> StatementList
+StatementList -> Statement StatementVar
+StatementVar -> * | 9 StatementList
+Statement -> SimpleStatement | CompoundStatement
+SimpleStatement -> 0 DAStatement | InputStatement | OutputStatement
+DAStatement -> 8 Type 1 | 19 Expression
+CompoundStatement -> ConditionalStatement | WhileStatement
+InputStatement -> 26 6 0 7
+OutputStatement -> 25 6 OutputVarStatement
+OutputVarStatement -> 0 7 | 1 7
+Expression -> Term ExpressionVar
+ExpressionVar -> * | 10 Term | 11 Term
+Term -> Factor | Term TermVar
+TermVar -> 13 Factor | 12 Factor
+Factor -> 0 | 1 | 6 Expression 7
+ConditionalStatement -> 21 Condition 8 4 StatementList 5 ElseStatement
+ElseStatement -> * | 22 8 4 StatementList 5
+Condition -> Expression Relation Expression
+WhileStatement -> 24 Condition 8 4 StatementList 5
+Type -> Type_list | Array
+Type_list -> 29 | 31 | 30
+Array -> Type_list 2 3
+Relation -> 15 | 17 | 14 | 16 | 18

@@ -1,0 +1,34 @@
+{
+  "name": "small-js-lexical-analyzer",
+  "version": "1.0.0",
+  "description": "Small JS like language lexical analyzer for Formal Languages and Compiler Design course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexnaiman/small-lexical-analyzer.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "node",
+    "nodejs",
+    "lexical",
+    "analyzer",
+    "compiler",
+    "school",
+    "ubb"
+  ],
+  "author": "Alex Naiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexnaiman/small-lexical-analyzer/issues"
+  },
+  "homepage": "https://github.com/alexnaiman/small-lexical-analyzer#readme",
+  "dependencies": {
+    "line-reader": "^0.4.0",
+    "simple-hashtable": "^1.0.0"
+  }
+}
